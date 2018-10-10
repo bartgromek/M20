@@ -1,23 +1,17 @@
-
-const webpack = require('webpack')
-
-const isProd = (process.env.NODE_ENV || 'production') === 'production'
-
-const assetPrefix = isProd ? '/your-repository-name' : ''
+const path = require('path')
 
 module.exports = {
-  exportPathMap: () => ({
-    '/': { page: '/' },
-    '/page1': { page: '/page1' }
-  }),
-  assetPrefix: assetPrefix,
-  webpack: config => {
-    config.plugins.push(
-      new webpack.DefinePlugin({
-        'process.env.ASSET_PREFIX': JSON.stringify(assetPrefix)
-      })
-    )
+  webpack: (config, { dev }) => {
+    // Perform customizations to webpack config
 
+    // Important: return the modified config
+    // config.resolve.modules = [path.resolve(__dirname, "components"), "node_modules"]
+    return config
+  },
+  webpackDevMiddleware: (config) => {
+    // Perform customizations to webpack dev middleware config
+
+    // Important: return the modified config
     return config
   }
 }

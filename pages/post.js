@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import Layout from 'layouts/Main'
 import { getPost } from 'api/posts'
-
+import Disqus from 'disqus-react'
 const Wrapper = styled.div`
   padding: 3rem;
   max-width: 750px;
@@ -29,6 +29,12 @@ const Wrapper = styled.div`
     font-family: "PT Sans", sans-serif;
   }
 `
+const disqusShortname = 'example'
+const disqusConfig = {
+  url: this.props.article.url,
+  identifier: this.props.article.id,
+  title: this.props.article.title
+}
 
 const PostPage = ({ post }) =>
   <Layout>
@@ -39,6 +45,7 @@ const PostPage = ({ post }) =>
       <p>
         {post.body}
       </p>
+      <Disqus.DiscussionEmbed shortname={disqusShortname} config={disqusConfig} />
     </Wrapper>
   </Layout>
 

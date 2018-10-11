@@ -5288,6 +5288,11 @@ react-deep-force-update@^2.1.1:
   resolved "https://registry.yarnpkg.com/react-deep-force-update/-/react-deep-force-update-2.1.1.tgz#8ea4263cd6455a050b37445b3f08fd839d86e909"
   integrity sha1-jqQmPNZFWgULN0RbPwj9g52G6Qk=
 
+react-disqus-comments@^1.2.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/react-disqus-comments/-/react-disqus-comments-1.2.0.tgz#e5aae2ea6cdce998cfc1340aab11df1be68f71f5"
+  integrity sha512-FS3+AW3lWU6PXM0p/q3exqKFI/FG12XqoU7TDquXG1xbLLdZC5Ux+C0VvAg2LEeWVK8gNu5NT9kg09oWJ7JFnw==
+
 react-dom@^16.0.0:
   version "16.0.0"
   resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-16.0.0.tgz#9cc3079c3dcd70d4c6e01b84aab2a7e34c303f58"

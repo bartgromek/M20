@@ -2,25 +2,22 @@ import Head from 'next/head'
 import Wrapper from './Wrapper'
 import Nav from 'components/Nav'
 import Footer from 'components/Footer'
+import Comments from 'components/Comments'
 
-export default ({ children, title = 'This is the default title' }) => (
-  <Wrapper>
-    <Head>
-      <title>{ title }</title>
-    </Head>
-    <header>
-      <Nav />
-    </header>
+export default ({children, title = 'This is the default title'}) => <Wrapper>
+  <Head>
+    <title>{title}</title>
+  </Head>
+  <header>
+    <Nav />
+  </header>
 
-    <main>
-      { children }
-    </main>
+  <main>
+    {children}
+  </main>
 
-    <Footer>
-      <script>
-        console.log('yo');
-      </script>
-      Footer
-    </Footer>
-  </Wrapper>
-)
+  <Footer>
+    <Comments />
+    Footer
+  </Footer>
+</Wrapper>

@@ -23,8 +23,7 @@
     "react-disqus-comments": "^1.2.0",
     "react-dom": "^16.0.0",
     "standard": "^10.0.3",
-    "styled-components": "^2.2.1",
-    "react-disqus-comments": "^1.2.0"
+    "styled-components": "^2.2.1"
   },
   "now": {
     "alias": "M20"

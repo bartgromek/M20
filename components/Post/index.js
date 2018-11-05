@@ -9,8 +9,8 @@ const PostItem = ({ post }) => (
       <a>
         <h3>{post.title}</h3>
         <p>{post.body}</p>
+        <p><Comments /></p>
       </a>
-      <Comments />
     </Link>
   </Wrapper>
 )

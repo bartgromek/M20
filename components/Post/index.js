@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from '../../routes'
 import Wrapper from './Wrapper'
+import Comments from '../Comments'
 
 const PostItem = ({ post }) => (
   <Wrapper>
@@ -10,6 +11,7 @@ const PostItem = ({ post }) => (
         <p>{post.body}</p>
       </a>
     </Link>
+    <Comments />
   </Wrapper>
 )
 

@@ -9,7 +9,7 @@ export default class Comments extends React.Component {
   render () {
     return (
       <ReactDisqusComments
-        shortname='https-next-go-herokuapp-com.'
+        shortname='https-next-go-herokuapp-com'
         identifier='something-unique-12345'
         title='Example Thread'
         url='https://https-next-go-herokuapp-com-1.disqus.com/embed.js'

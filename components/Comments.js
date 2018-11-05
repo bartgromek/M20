@@ -12,7 +12,7 @@ export default class Comments extends React.Component {
         shortname='example'
         identifier='something-unique-12345'
         title='Example Thread'
-        url='https://https-next-go-herokuapp-com.disqus.com/embed.js'
+        url='https://https-next-go-herokuapp-com-1.disqus.com/embed.js'
         category_id='123456'
         onNewComment={this.handleNewComment} />
     )

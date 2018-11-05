@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import Layout from 'layouts/Main'
 import { getPost } from 'api/posts'
 import Disqus from 'disqus-react'
+import Comments from '../components/Comments'
 const Wrapper = styled.div`
   padding: 3rem;
   max-width: 750px;
@@ -47,6 +48,9 @@ const PostPage = ({ post }) =>
       </h1>
       <p>
         {post.body}
+      </p>
+      <p>
+        <Comments />
       </p>
       <Disqus.DiscussionEmbed />
     </Wrapper>

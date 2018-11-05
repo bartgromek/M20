@@ -2,7 +2,6 @@ import React from 'react'
 import styled from 'styled-components'
 import Layout from 'layouts/Main'
 import { getPost } from 'api/posts'
-import Disqus from 'disqus-react'
 import Comments from '../components/Comments'
 const Wrapper = styled.div`
   padding: 3rem;
@@ -31,15 +30,6 @@ const Wrapper = styled.div`
   }
 `
 
-/*
-const disqusShortname = 'example'
-const disqusConfig = {
-  url: this.props.article.url,
-  identifier: this.props.article.id,
-  title: this.props.article.title
-}
-*/
-
 const PostPage = ({ post }) =>
   <Layout>
     <Wrapper>
@@ -49,10 +39,7 @@ const PostPage = ({ post }) =>
       <p>
         {post.body}
       </p>
-      <p>
-        <Comments />
-      </p>
-      <Disqus.DiscussionEmbed />
+      <Comments />
     </Wrapper>
   </Layout>
 
